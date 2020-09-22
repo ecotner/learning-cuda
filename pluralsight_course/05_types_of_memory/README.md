@@ -62,6 +62,6 @@ Declaration | Memory | Scope | Lifetime | Slowdown
 --- | --- | --- | --- | ---
 `int foo;` | register | thread | kernel | 1x
 `int foo[10];` | "local" | thread | kernel | 100x
-`__shared__ int foo;` | shared | block | kernal | 1x
+`__shared__ int foo;` | shared | block | kernel | 1x
 `__device__ int foo;` | global | grid | application | 100x
 `__constant__ int foo;` | constant | grid | application | 1x
